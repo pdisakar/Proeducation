@@ -4,7 +4,7 @@ const countries = [
   { id: "can", name: "Canada" },
   { id: "usa", name: "USA" },
   { id: "nez", name: "New Zealand" },
-  { id: "uk", name: "United Kingdom" },
+  { id: "uk", name: "UK" },
   { id: "jap", name: "Japan" },
 ];
 const Dreamdestination = () => {
