@@ -25,14 +25,14 @@ const Herosection = () => {
         <div className="flex flex-wrap mt-6 gap-6">
           <Link
             href="#"
-            className="px-10 py-5 bg-primary text-white rounded-md inline-block"
+            className="px-10 py-3 bg-primary text-white rounded-md inline-block"
           >
             Explore More
           </Link>
 
           <Link
             href="#"
-            className="px-10 py-5 bg-primary/10 text-primary border border-primary rounded-md inline-block"
+            className="px-10 py-3 bg-primary/10 text-primary border border-primary rounded-md inline-block"
           >
             Book Appointment
           </Link>

@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
 const services = [
-  { icon: "career", title: "Career Support" },
-  { icon: "departure", title: "Departure Assistance" },
-  { icon: "documents", title: "Document Guidance" },
-  { icon: "flight", title: "Flight Booking" },
-  { icon: "ielts", title: "IELTS Preparation" },
-  { icon: "scholarships", title: "Scholarships" },
-  { icon: "university", title: "University Guidance" },
-  { icon: "manymore", title: "Many More" },
+  { icon: 'career', title: 'Career Support' },
+  { icon: 'departure', title: 'Departure Assistance' },
+  { icon: 'documents', title: 'Document Guidance' },
+  { icon: 'flight', title: 'Flight Booking' },
+  { icon: 'ielts', title: 'IELTS Preparation' },
+  { icon: 'scholarships', title: 'Scholarships' },
+  { icon: 'university', title: 'University Guidance' },
+  { icon: 'manymore', title: 'Many More' },
 ];
 
 const Services = () => {
   return (
-    <div className="common-box !pt-0 ">
+    <div className="common-box !pt-0">
       <div className="container">
         <div className="title flex items-center flex-col text-center">
           <h2>Services we offer you</h2>
@@ -27,15 +27,16 @@ const Services = () => {
           {services.map((service, index) => (
             <li
               key={index}
-              className="service-item flex flex-col items-center justify-center text-center border border-muted/20 py-11 px-11 rounded-[4px]"
-            >
-              <svg className="icon" width="72" height="72">
+              className="service-item group flex flex-col items-center justify-center text-center border border-muted/20 py-11 px-11 rounded-[4px] transition-all duration-300 hover:bg-secondary/10 hover:cursor-pointer">
+              <svg
+                className="icon w-18 h-18 transition-all duration-300 group-hover:scale-110"
+                width="72"
+                height="72">
                 <use
                   xlinkHref={`/icons.svg#${service.icon}`}
-                  fill="currentColor"
-                ></use>
+                  fill="currentColor"></use>
               </svg>
-              <p className=" text-sm text-headings font-semibold mt-4">
+              <p className="text-sm text-headings font-semibold mt-4 transition-all duration-300 group-hover:text-secondary">
                 {service.title}
               </p>
             </li>

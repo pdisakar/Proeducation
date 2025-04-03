@@ -22,7 +22,7 @@ export default {
 
       colors: {
         primary: "#307bbf",
-        secondary: "f57f21",
+        secondary: "#f57f21",
         "primary-dark": "#174c8d",
         third: "#4f94d3",
         muted: "#686868",
