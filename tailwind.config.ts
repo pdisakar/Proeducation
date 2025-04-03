@@ -5,6 +5,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layout/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -23,8 +24,8 @@ export default {
         primary: "#307bbf",
         secondary: "f57f21",
         "primary-dark": "#174c8d",
-        third: "4f94d3",
-        muted: "686868",
+        third: "#4f94d3",
+        muted: "#686868",
         headings: "#001221",
         "body-bg": "#fdfeff",
       },

@@ -6,4 +6,19 @@
   body {
     @apply bg-body-bg font-primary;
   }
+  .common-box {
+    @apply py-24;
+  }
+
+  .title {
+    h2 {
+      @apply text-4xl leading-[135%] text-primary font-semibold mb-6;
+    }
+    p {
+      @apply text-[15px] leading-[170%] text-muted max-w-[792px];
+    }
+    span {
+      @apply text-lg text-primary;
+    }
+  }
 }
