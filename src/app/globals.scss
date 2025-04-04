@@ -12,7 +12,7 @@
 
   .title {
     h2 {
-      @apply text-4xl leading-[135%] text-primary font-semibold mb-6;
+      @apply text-2xl md:text-3xl lg:text-4xl leading-[145%] md:lg:leading-[145%] lg:leading-[145%] text-primary font-semibold mb-6;
     }
     p {
       @apply text-[15px] leading-[170%] text-muted max-w-[792px];
@@ -20,5 +20,19 @@
     span {
       @apply text-lg text-primary;
     }
+  }
+}
+
+.image-slot {
+  @apply relative z-10 overflow-hidden before:-z-10 block after:-z-10 before:block;
+  @apply bg-muted/10;
+  background-image: url("/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  > img {
+    @apply absolute w-full h-full bottom-0 object-cover;
   }
 }

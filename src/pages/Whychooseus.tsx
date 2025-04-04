@@ -39,11 +39,11 @@ const Whychooseus = () => {
             ensuring your success.
           </p>
         </div>
-        <ul className="service-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        <ul className="service-list grid grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {services.map((service, index) => (
             <li
               key={index}
-              className="service-item group flex flex-col items-center justify-center text-center border border-muted/20 p-6 rounded-[4px] transition-all duration-300 hover:bg-primary/10 hover:cursor-pointer hover:border-primary/50"
+              className="service-item group flex flex-col items-center justify-center text-center border border-muted/20 p-2 md:p-4 lg:p-6 rounded-[4px] transition-all duration-300 hover:bg-primary/10 hover:cursor-pointer hover:border-primary/50"
             >
               <svg
                 className="icon transition-all text-primary group-hover:text-primary/50 duration-300 group-hover:scale-110"

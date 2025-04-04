@@ -23,7 +23,7 @@ const Services = () => {
             ensuring your success.
           </p>
         </div>
-        <ul className="service-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center mt-8">
+        <ul className="service-list grid grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center mt-8">
           {services.map((service, index) => (
             <li
               key={index}

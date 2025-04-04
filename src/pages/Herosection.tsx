@@ -40,7 +40,8 @@ const Herosection = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        {imageData.map(({ id, path, alt }, index) => (
+        {/* {imageData.map(({ id, path, alt }, index) => (
+         
           <Image
             key={id}
             height={254}
@@ -51,6 +52,16 @@ const Herosection = () => {
               index === 0 ? "col-span-2" : ""
             }`}
           />
+        ))} */}
+        {imageData.map(({ id, path, alt }, index) => (
+          <figure
+            key={id}
+            className={`image-slot before:pt-[43.19727891156463%] w-full h-full object-cover rounded-lg ${
+              index === 0 ? "col-span-2" : ""
+            }`}
+          >
+            <Image height={254} width={588} src={path} alt={alt} />
+          </figure>
         ))}
       </div>
     </div>

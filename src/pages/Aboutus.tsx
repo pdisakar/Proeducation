@@ -1,27 +1,27 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const imageData = [
-  { id: 0, path: '/about-us/aboutus1.webp', alt: 'Kantipur Apartment' },
-  { id: 1, path: '/about-us/aboutus2.webp', alt: 'Kantipur Apartment' },
-  { id: 2, path: '/about-us/aboutus3.webp', alt: 'Kantipur Apartment' },
+  { id: 0, path: "/about-us/aboutus1.webp", alt: "Kantipur Apartment" },
+  { id: 1, path: "/about-us/aboutus2.webp", alt: "Kantipur Apartment" },
+  { id: 2, path: "/about-us/aboutus3.webp", alt: "Kantipur Apartment" },
 ];
 
 const achievement = [
   {
     id: 0,
-    title: '15+',
-    body: 'Years Experience',
+    title: "15+",
+    body: "Years Experience",
   },
   {
     id: 1,
-    title: '6000+',
-    body: 'Visa Approved',
+    title: "6000+",
+    body: "Visa Approved",
   },
   {
     id: 2,
-    title: '96%',
-    body: 'Admission Rate',
+    title: "96%",
+    body: "Admission Rate",
   },
 ];
 
@@ -29,18 +29,31 @@ const Aboutus = () => {
   return (
     <div className="common-box !pt-0">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* <figure className="product-card">
+        <Link
+          href={link}
+          className="image-slot image-slot before:pt-[91.14583333333333%] border border-muted/0.5">
+          <Image
+            src={full_path}
+            alt={title}
+            height={350}
+            width={384}
+            className="object-cover group-hover:scale-110 transition-transform"
+            sizes="auto, (max-width: 384px), 384px"
+            fetchPriority="high"
+          />
+        </Link>
+      </figure> */}
         <div className="grid md:grid-cols-2 gap-6 order-2 lg:order-1">
           {imageData.map(({ id, path, alt }, index) => (
-            <Image
+            <figure
               key={id}
-              height={254}
-              width={588}
-              src={path}
-              alt={alt}
-              className={`w-full h-full object-cover rounded-lg ${
-                index === 2 ? 'col-span-2' : ''
+              className={`image-slot before:pt-[43.19727891156463%] w-full h-full object-cover rounded-lg ${
+                index === 2 ? "col-span-2" : ""
               }`}
-            />
+            >
+              <Image height={254} width={588} src={path} alt={alt} />
+            </figure>
           ))}
         </div>
         <div className="about-us order-1 lg:order-2">
@@ -66,7 +79,8 @@ const Aboutus = () => {
             {achievement.map(({ id, title, body }) => (
               <li
                 key={id}
-                className="text-center p-6 bg-primary/20 text-primary rounded-lg">
+                className="text-center p-6 bg-primary/20 text-primary rounded-lg"
+              >
                 <h3 className="text-[22px] leading-[22px] font-bold">
                   {title}
                 </h3>
