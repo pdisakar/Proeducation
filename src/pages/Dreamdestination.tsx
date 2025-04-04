@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 const countries = [
-  { id: 'aus', name: 'Australia' },
-  { id: 'can', name: 'Canada' },
-  { id: 'usa', name: 'USA' },
-  { id: 'nez', name: 'New Zealand' },
-  { id: 'uk', name: 'UK' },
-  { id: 'jap', name: 'Japan' },
+  { id: "aus", name: "Australia" },
+  { id: "can", name: "Canada" },
+  { id: "usa", name: "USA" },
+  { id: "nez", name: "New Zealand" },
+  { id: "uk", name: "UK" },
+  { id: "jap", name: "Japan" },
 ];
 const Dreamdestination = () => {
   return (
@@ -21,21 +21,24 @@ const Dreamdestination = () => {
         </div>
         <div className="destinations mt-8">
           <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {countries.map(country => (
+            {countries.map((country) => (
               <li
                 key={country.id}
-                className="text-center flex items-center justify-center flex-col px-6 py-6 border border-muted/20 rounded-[4px] group hover:cursor-pointer">
+                className="text-center flex items-center justify-center flex-col px-6 py-6 border border-muted/20 rounded-[4px] group hover:cursor-pointer hover:bg-primary/10 hover:border-primary/50"
+              >
                 <svg
                   className="icon group-hover:scale-110 duration-300"
                   width="100"
-                  height="65">
+                  height="65"
+                >
                   <use
                     xlinkHref={`/icons.svg#${country.id}`}
-                    fill="currentColor"></use>
+                    fill="currentColor"
+                  ></use>
                 </svg>
-                <p className=" mt-5 text-lg text-headings font-semibold leading-[18px] ">
+                <h3 className=" mt-5 text-lg text-headings font-semibold leading-[18px] group-hover:text-primary duration-300 ">
                   {country.name}
-                </p>
+                </h3>
               </li>
             ))}
           </ul>
